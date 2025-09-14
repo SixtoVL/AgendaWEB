@@ -1,0 +1,40 @@
+.contactos{
+
+}
+
+.lista_contactos{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto{
+    border: 1px solid black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    cursor: pointer;
+}
+
+.nombre_contacto{
+    padding:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+
+}
+
+#contacto_nombre{
+    margin-right: 1rem;
+}
+
+.info_contacto{
+    display: none;  /*none*/
+}
+
+.info_contacto.activo{
+    display: flex;
+    margin-top: 1rem;
+}

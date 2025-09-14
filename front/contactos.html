@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contactos.css">
+    <link rel="stylesheet" href="./styles/contacto.css">
+    <title>Agenda Web|MisContactos</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo"><a href="index.html">AGENDA WEB</a></div>
+            <div class="actions">
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bar_settings">
+            <div class="bar_top">
+                <input type="search" placeholder="Buscar contactos🔎">
+                <button class="btn" id="btnAbrir">Agregar contacto</button>
+            </div>
+            <div class="bar_bottom">    
+                <button>Contactos con correo</button>
+                <button>Contactos con dirección</button>
+                <button>Favoritos</button>
+                
+            </div>
+        </section>
+
+        <!-- Overlay con formulario -->
+        <div class="overlay" id="overlay">
+            <div class="form-popup">
+            <h2>Nuevo contacto</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo">
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion">
+
+                <div class="actions">
+                <button type="submit" class="btn-guardar">Guardar</button>
+                <button type="button" class="btn-cancelar" id="btnCerrar">Cancelar</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <section class="contactos">
+            <ul class="lista_contactos">
+                <li class="contacto">
+                    <div class="nombre_contacto">
+                        <div id="contacto_nombre">Juan</div>
+                        <div id="contacto_apellido">Hernandez</div>
+                    </div>
+                    <div class="info_contacto">
+                        5524029287
+                        juan@ejemplo.com
+                        francisco j mujica #116
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="./scripts/form_agregarContacto.js"></script>
+
+</body>
+</html>
