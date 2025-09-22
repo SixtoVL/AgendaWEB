@@ -1,7 +1,9 @@
-const $form = document.querySelector("#form_signin form");
+const d=document;
+const $form = d.querySelector("#form_signin form");
 
 $form.addEventListener("submit", async (e) => {
   e.preventDefault();
+  e.stopPropagation();
 
   const password = $form.elements["password-signin"].value;
   const confirmPassword = $form.elements["confirm_password"].value;

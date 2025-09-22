@@ -28,7 +28,7 @@
             <div>
                 <h2>Inicia Sesión</h2>
             </div>
-            <form action="" class="forms" >
+            <form class="forms" id="formulario_inicioSesion">
                 <label for="username-login">Nombre de usuario:</label>
                 <input type="text" id="username-login" name="username-login" required>
                 <label for="password-login">Contraseña:</label>
@@ -41,7 +41,7 @@
             <div>
                 <h2>Registrate</h2>
             </div>
-            <form action="" class="forms">
+            <form class="forms" id="formulario_registro"> 
                 <label for="username-signin">Nombre de usuario:</label>
                 <input type="text" id="username-signin" name="username-signin" required>
                 <label for="email">Correo:</label>
@@ -58,7 +58,8 @@
     </main>
 
 
-    <script src="./scripts/mostrar_formularios.js"></script>
-    <script src="./scripts/validar_registro.js"></script>
+    <script src="./scripts/mostrar_formularios.js" type="module"></script>
+    <script src="./scripts/validar_registro.js" type="module"></script>
+    <script src="./scripts/validar_sesion.js" type="module"></script>
 </body>
 </html>
